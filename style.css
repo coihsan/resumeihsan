@@ -211,7 +211,7 @@ header{
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .content-job{
     height: 830px;
   }
@@ -224,7 +224,7 @@ header{
 
 
 /*Responsive*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 481px) {
   header{
     height: 100%;
     background-color: var(--Secondary);
