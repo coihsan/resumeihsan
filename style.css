@@ -1,0 +1,265 @@
+:root{
+  --Primary: #252734;
+  --Secondary: #333647;
+  --TextLight: #F2F2F2;
+  --ButtonColor1: #73440A;
+  --ButtonColor2: #f29829;
+}
+body, html {
+  height: 100%;
+  background: var(--Primary);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  box-shadow: 0px 1px 4px 0 rgba(1, 1, 1, 0.1);
+}
+/*header akhir*/
+header{
+  padding: 0 10%;
+  height: 100%;
+  background-color: var(--Secondary);
+  background-image: url(/achonk.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/* awal jumbotron*/
+#flex-container{
+  display: inline-block;
+  flex-wrap: wrap;
+  margin: 100px 30px;
+  color: var(--TextLight);
+  align-items: center;
+  justify-content: center;
+}
+.salamhello{
+  font-size: 20px;
+}
+.salamnama{
+  font-size: 60px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  color: var(--ButtonColor2);
+}
+.aboutme{
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  color: var(--ButtonColor2);
+}
+/* akhir  jumbotron */
+/*header awal*/
+.display-5{
+  color: beige;
+}
+.job-experience{
+  padding: 30px 10%;
+  column-gap: 10px;
+  background-color: var(--Secondary);
+}
+.cardsss{
+  display: inline-block;
+  column-gap: 30px;
+  background-color: var(--Secondary);
+  align-items: center;
+  justify-content: center;
+}
+.display-footer{
+  margin-bottom: 25px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+.display-gaje{
+  padding: 10px 5%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.card-body{
+  background-color: var(--Secondary);
+  color: var(--TextLight);
+  text-align: center;
+}
+/*awal personal details*/
+.personals{
+  padding: 30px 10%;
+}
+.personals-container{
+  color: var(--TextLight);
+  list-style-type: none;
+  padding: 0 10%;
+}
+.personals-card{
+  padding: 5px 10%;
+}
+.personal-description{
+  text-align: left;
+}
+.rows{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*akhir personal details*/
+
+.sticky-bottom{
+  position: relative;
+}
+.d-flex{
+  margin: 20px 0;
+  align-items: center;
+  justify-content: center;
+}
+.sertifikat{
+  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+  margin: 30px auto;
+}
+/*contentjob*/
+
+.content-job{
+  color: var(--TextLight);
+  background-color: var(--Primary);
+  height: 370px;
+  padding: 0 5%;
+  background-color: #333647;
+}
+.juduljobsesi{
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  color: var(--ButtonColor2);
+}
+/*list style*/
+  .content-job ul{
+    list-style-type: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .content-job ul::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1px;
+    height: 100%;
+    border: 1px dashed var(--ButtonColor2);
+  }
+  .content-job ul li{
+    margin: 30px 30px;
+    position: relative;
+  }
+  .content-job ul li span{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: -30px;
+    width: 1px;
+    height: 100%;
+    border: 1px solid var(--ButtonColor2);
+  }
+  .content-job ul li span::before, .content-job ul li span::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--ButtonColor2);
+    position: absolute;
+    border-radius: 50px;
+    left: -5;
+    background-color: var(--ButtonColor2);
+  }
+  .content-job ul li span::before{
+    top: -5px;
+  }
+  .content-job ul li span::before{
+    top: 100%;
+  }
+/*list style*/
+.content-job:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column{
+  float: left;
+  width: 33.33%;
+  height: 120px;
+  padding: 0 5%;
+}
+.hr{
+  border: 0;
+  height: 2px;
+  background-image: var(--TextLight)
+}
+
+
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .content-job{
+    height: 830px;
+  }
+  .column {
+    width: 100%;
+    height: 120px;
+  }
+}
+/*contentjob*/
+
+
+/*Responsive*/
+@media only screen and (max-width: 600px) {
+  header{
+    height: 100%;
+    background-color: var(--Secondary);
+    background-image: url(/achonk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+  #flex-container{
+    margin: 120px 1px;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  .salamnama{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+  }
+  .salamtitle{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+  }
+  .personal-description{
+    font-size: 14px;
+  }
+  .personals-detail{
+    font-size: 14px;
+  }
+  .rows{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+  }
+  .personals{
+    padding: 0px 0;
+  }
+}
