@@ -211,7 +211,7 @@ header{
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (min-width: 481px) and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .content-job{
     height: 830px;
   }
@@ -224,11 +224,11 @@ header{
 
 
 /*Responsive*/
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 600px) {
   header{
     height: 100%;
     background-color: var(--Secondary);
-    background-image: url(/achonk.png);
+    background-image: url(images/achonks.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
